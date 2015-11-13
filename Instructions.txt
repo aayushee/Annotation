@@ -1,0 +1,33 @@
+This document specifies the instructions for the annotation task.
+You have a folder ANTx (x=1,2,..5) consisting of 3 sub folders- Images, Ocr, Example.
+The Images folder consists of newspaper article images and the Ocr folder consists of the corresponding Ocr text from those images.
+(Please notice the difference in numbering in both the folders. There is no one to one image correspondence with its Ocr text. This is because there 
+can be multiple images corresponding to a single Ocr text article.)
+There are 50 news articles in your Ocr folder. We are trying to get the gold standard data of these Ocr text articles.
+Your task is to create a new folder called Original, and write the original text,i.e., text as seen in a newspaper article image from Images folder
+for every article in the Ocr folder.
+
+Please go through the following points while writing the original text:
+
+a) There should be no punctuation in the text that you write. If you find any tab spaces or any special characters in the 
+newspaper images, just skip them while writing the text
+
+b) You need to write in the form of line texts exactly as seen in the news article image and make sure that the number of lines
+that you have written for every news article image/s, also match the number of lines in the corresponding OCR text article.
+
+c) An image can be part of a news article spread across multiple images as mentioned earlier- in such cases, original text from multiple images should be combined
+and written in a single original text file only. (You will need to determine which images are actually part of the same article. You can take that hint either by
+going through first and last lines of the consecutive article images and matching it with Ocr article text.)
+
+d) Naming of the text files in Original folder-> They need to be named in the same manner as
+the Ocr folder. So for every Ocr text article for which you are writing the original text, name the original text file with the same name as the Ocr text
+followed by the suffix "-original".
+Example: If you are writing original text for article 73831.txt from the Ocr folder that corresponds to image 56.jpg from the Images folder,
+then the Original folder should have the text file named 73831-original.txt 
+
+e) The Example folder has an example of the ocr, image/s and its corresponding original text file to help you understand the process.
+
+f) Please open the Ocr folder text articles with a Wordpad or Notepad++ or any other software that shows linetexts. Simple
+notepad might show the complete article in a single line. No need to use any software if you are working on GitHub itself.
+
+In case of any doubts, please do email me at: aayushee1230@iiitd.ac.in
